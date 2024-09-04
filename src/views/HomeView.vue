@@ -1,6 +1,7 @@
 <template>
   <div class="main">
     <NavBar />
+    teste
   </div>
 </template>
 <script>
