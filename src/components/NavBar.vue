@@ -3,10 +3,26 @@
         <div class="navbar">
             <img src="./icons/EarthGuardians.png">
             <ul class="nav-list">
-                <li>Maus tratos aos animais</li>
-                <li>Poluição das águas</li>
-                <li>Descarte inadequado do lixo</li>
-                <li>Queimadas e desmatamento</li>
+                <li>
+                    <RouterLink to="/formulario/animais" class="router-link">
+                        Maus tratos aos animais
+                    </RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/formulario/agua" class="router-link">
+                        Poluição das águas
+                    </RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/formulario/lixo" class="router-link">
+                        Descarte inadequado do lixo
+                    </RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/formulario/queimadas" class="router-link">
+                        Queimadas e desmatamento
+                    </RouterLink>
+                </li>
             </ul>
             <div class="button">
                 <span>
@@ -17,6 +33,8 @@
     </div>
 </template>
 <script>
+import { RouterLink } from 'vue-router';
+
 
 </script>
 <style scoped lang="scss">
@@ -37,9 +55,13 @@
         display: flex;
         list-style-type: none;
         gap: 50px;
-        li{
+        li {
+            .router-link{
+            text-decoration: none; 
+            color: inherit;
             font-weight: 500;
             cursor: pointer;
+            }
         }
         li:hover{
             color: #82ae92;
