@@ -1,34 +1,34 @@
 <template>
-    <div class="container-navbar">
-        <div class="navbar">
+    <div class="navbar">
+        <RouterLink to="/">
             <img src="./icons/EarthGuardians.png">
-            <ul class="nav-list">
-                <li>
-                    <RouterLink to="/formulario/animais" class="router-link">
-                        Maus tratos aos animais
-                    </RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/formulario/agua" class="router-link">
-                        Poluição das águas
-                    </RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/formulario/lixo" class="router-link">
-                        Descarte inadequado do lixo
-                    </RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/formulario/queimadas" class="router-link">
-                        Queimadas e desmatamento
-                    </RouterLink>
-                </li>
-            </ul>
-            <div class="button">
-                <span>
-                    Doe agora
-                </span>
-            </div>
+        </RouterLink>
+        <ul class="nav-list">
+            <li>
+                <RouterLink to="/formulario/animais" class="router-link">
+                    Maus tratos aos animais
+                </RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/formulario/agua" class="router-link">
+                    Poluição das águas
+                </RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/formulario/lixo" class="router-link">
+                    Descarte inadequado do lixo
+                </RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/formulario/queimadas" class="router-link">
+                    Queimadas e desmatamento
+                </RouterLink>
+            </li>
+        </ul>
+        <div class="button">
+            <span>
+                Doe agora
+            </span>
         </div>
     </div>
 </template>
@@ -38,27 +38,25 @@ import { RouterLink } from 'vue-router';
 
 </script>
 <style scoped lang="scss">
-.container-navbar{
-    background-color: rgba(0, 0, 0, 0);
-    padding-top: 15px ;
-}
 .navbar{
-    background-color: #dbdaa4a4;
-    border-radius: 200px;
-    height: 150px;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0 50px;
+    z-index: 10;
     ul {
-        margin-left: -30px;
         display: flex;
         list-style-type: none;
         gap: 50px;
         li {
             .router-link{
             text-decoration: none; 
-            color: inherit;
+            color: white;
             font-weight: 500;
             cursor: pointer;
             }
@@ -68,8 +66,8 @@ import { RouterLink } from 'vue-router';
         }
     }
     img {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
     .button {
         display: grid;
@@ -78,7 +76,7 @@ import { RouterLink } from 'vue-router';
         background-color:#72967f;
         width: 250px;
         height: 100%;
-        border-radius: 0 200px 200px 0;
+        border-radius: 10px;
         cursor: pointer;
         transition: 0.5s;
         span {
