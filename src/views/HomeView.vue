@@ -17,10 +17,42 @@
       <p>Devemos amar e proteger a natureza</p>
       <span>Promovemos a preservação da biodiversidade e o fim dos crimes ambientais </span>
       <ul>
-        <li>+5 mil <span><br>casos denúnciados resolvidos</span></li>
-        <li>+200 <span><br>ações de conscientização realizadas</span></li>
-        <li>+100 <span><br>parcerias com ONGs e ativistas</span></li>
+        <li>
+          <p>
+            +5 mil
+          </p>
+          <span>
+            casos denúnciados resolvidos
+          </span>
+        </li>
+        <li>
+          <p>
+            +200
+          </p> 
+          <span>
+            ações de conscientização realizadas
+          </span>
+        </li>
+        <li>
+          <p>
+            +100
+          </p>
+          <span>
+            parcerias com ONGs e ativistas
+          </span>
+        </li>
       </ul>
+    </div>
+    <div class="cases">
+      <div class="animals">
+        <div class="animals-img">
+          
+        </div>
+        <div>
+
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
@@ -123,13 +155,27 @@ export default {
       width: 60%;
       li {
         text-align: center;
-        font-size: 40px;
-        color: #4ea653;
-        font-weight: 700;
+        p {
+          text-align: center;
+          font-size: 40px;
+          color: #4ea653;
+          font-weight: 700;
+        }
         span{
           text-align: center;
           font-size: 16px;
         }
+      }
+    }
+  }
+  .cases {
+    .animals{
+      width: 80vw;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      .animals-img {
+        
       }
     }
   }
