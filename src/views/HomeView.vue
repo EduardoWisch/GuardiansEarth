@@ -46,10 +46,11 @@
     <div class="cases">
       <div class="animals">
         <div class="animals-img">
-          
+          <img src="https://images.pexels.com/photos/5608108/pexels-photo-5608108.jpeg">
         </div>
-        <div>
-
+        <div class="animals-text">
+          <h2>Lorem esse kofn jfhgbgj heubfb</h2>
+          <p>kkkk kkkkkk kkkkkkkk kkkkkkkk kkkk kkkkkk kkkkkkkk kkkkkkkk kkkk kkkkkk kkkkkkkk kkkkkkkk kkkk kkkkkk kkkkkkkk kkkkkkkk kkkk kkkkkk kkkkkkkk kkkkkkkk kkkk kkkkkk kkkkkkkk kkkkkkkk</p>
         </div>
       </div>
 
@@ -170,12 +171,25 @@ export default {
   }
   .cases {
     .animals{
-      width: 80vw;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 6fr 6fr;
+      gap: 50px;
       .animals-img {
-        
+        display: grid;
+        justify-content: end;
+        img{
+        border-radius: 10px;
+        width: 500px;
+        height: 550px;
+        }
+      }
+      .animals-text{
+        display: grid;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+        width: 500px;
       }
     }
   }
