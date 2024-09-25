@@ -1,14 +1,7 @@
 <template>
     <NavBar/>
     <div class="main">
-        <div class="content">
-            <div class="form">
-    
-            </div>
-            <div class="img">
-                <img src="https://paulista.pe.gov.br/site/app/webroot/files/arquivos/050720181535000000000.jpg" alt="">
-            </div>
-        </div>
+        <div class="blur"></div>
     </div>
 </template>
 <script>
@@ -21,30 +14,19 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+.blur{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1;
+}
 .main{
 min-height: 100vh;
-background: linear-gradient(90deg, #82ae92, #3c5a47);
-display: flex;
-justify-content: center;
-align-items: center;
-.content{
-    padding-top: 100px;
-    border-radius: 10px;
-    width: 1200;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    .form{
-        background-color: black;
-    }
-    .img{
-        img{
-            object-fit: cover;
-            border-radius: 0 10px 10px 0px;
-            height: 100%;
-            width: 700px;
-        }
-    }
-}
+background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1280,h_640/https://delegadobrunolima.com.br/wp-content/uploads/2020/12/dog-3778793_1280-1280x640.jpg');
+background-repeat: no-repeat;
+background-size: cover; 
 }
 </style>
