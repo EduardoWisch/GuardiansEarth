@@ -122,7 +122,7 @@ export default {
               type: "Descarte inadequado do lixo"
           };
           const existingData = JSON.parse(localStorage.getItem('formData')) || [];
-          existingData.push(formData);
+          existingData.unshift(formData);
           localStorage.setItem('formData', JSON.stringify(existingData));
           this.clearForm();
           alert("Formulário enviado com sucesso!");
