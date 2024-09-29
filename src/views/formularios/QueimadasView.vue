@@ -107,7 +107,7 @@ export default {
             if (file) {
                 this.image = URL.createObjectURL(file); 
             }
-        }
+        },
       sendForm() {
           const formData = {
               name: this.name,
