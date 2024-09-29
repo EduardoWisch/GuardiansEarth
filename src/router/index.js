@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/formulario/queimadas',
       name: 'queimadas',
       component: () => import('../views/formularios/QueimadasView.vue')
+    },
+    {
+      path: '/denuncias',
+      name: 'denuncias',
+      component: () => import('../views/DenunciasView.vue')
     }
   ]
 })

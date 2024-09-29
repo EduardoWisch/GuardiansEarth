@@ -7,8 +7,6 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-
-
 @media (min-width: 1024px) {
   header {
     display: flex;

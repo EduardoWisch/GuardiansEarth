@@ -25,11 +25,13 @@
                 </RouterLink>
             </li>
         </ul>
-        <div class="button">
-            <span>
-                Doe agora
-            </span>
-        </div>
+        <RouterLink to="/denuncias" class="router-link">
+            <div class="button">
+                <span>
+                    Denúncias
+                </span>
+            </div>
+        </RouterLink>
     </div>
 </template>
 <script>
@@ -53,14 +55,6 @@ import { RouterLink } from 'vue-router';
         display: flex;
         list-style-type: none;
         gap: 50px;
-        li {
-            .router-link{
-            text-decoration: none; 
-            color: white;
-            font-weight: 500;
-            cursor: pointer;
-            }
-        }
         li:hover{
             color: #82ae92;
         }
@@ -86,6 +80,12 @@ import { RouterLink } from 'vue-router';
     }
     .button:hover{
         background-color:#5c7766;
+    }
+    .router-link{
+        text-decoration: none; 
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
     }
 }
 </style>
