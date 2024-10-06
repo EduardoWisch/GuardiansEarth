@@ -5,7 +5,7 @@
     <div class="donation">
       <p>Earth Guardian</p>
       <h1>
-        Ajude a protejer o meio ambiente
+        Ajude a proteger o meio ambiente
       </h1>
       <Router-link to="/denuncias" class="router-link">
         <div>

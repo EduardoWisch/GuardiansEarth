@@ -41,7 +41,7 @@ export default {
             if (data) {
             this.storedData = data
             } else {
-            this.storedData = 'Nenhum dado armazenado.';
+            this.storedData = null;
             }
         },
     },
@@ -62,7 +62,8 @@ export default {
     z-index: -1;
 }
 .main{
-    margin-top: 15vh;
+    position: relative;
+    padding-top: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,12 +77,13 @@ export default {
         color: white;
         border: 2px solid white;
         margin: 10px 0 10px 0;
+        cursor: pointer;
     }
 }
 .card{
     overflow-x: hidden;
     width: 80vw;
-    height: 230px;
+    height: 260px;
     border: 2px solid white;
     border-radius: 20px;
     margin-bottom: 20px;
